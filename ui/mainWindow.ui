@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CMainWindow</class>
+ <widget class="QMainWindow" name="CMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>464</width>
+    <height>140</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Clock</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#wgCentral {
+  background-color: black;
+}
+QLabel {
+  color: #ffffff;
+}
+#lbClock {
+  font-family: &quot;Segoe UI Light&quot;;
+  font-weight: bold;
+  font-size: 80px;
+}
+#lbDay, #lbDate {
+  font-family: &quot;Segoe UI&quot;;
+  font-size: 30px;
+}</string>
+  </property>
+  <widget class="QWidget" name="wgCentral">
+   <widget class="QLabel" name="lbClock">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>231</width>
+      <height>94</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>12:34</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbDay">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>30</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>pondělí</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbDate">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>60</y>
+      <width>161</width>
+      <height>55</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>24. června</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
