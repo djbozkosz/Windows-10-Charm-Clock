@@ -11,7 +11,7 @@ CMainWindow::CMainWindow(uint modifier, uint key, int transitionDuration, QWidge
   setWindowFlags(Qt::FramelessWindowHint | Qt::WindowStaysOnTopHint);
 
   dwm.load(reinterpret_cast<HWND>(winId()));
-  dwm.extendFrameIntoClientArea(SDwmMargins(-1, -1, -1, -1));
+  //dwm.extendFrameIntoClientArea(SDwmMargins(-1, -1, -1, -1));
 
   SAccentPolicy accentPolicy = SAccentPolicy(NDwm::ACCENT_ENABLE_BLURBEHIND, 0, 0, 0);
   SWinCompAttrData compAttrData = SWinCompAttrData(NDwm::WCA_CLOAKED, &accentPolicy, sizeof(SAccentPolicy));
